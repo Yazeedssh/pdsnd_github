@@ -134,14 +134,13 @@ def user_stats(df):
     start_time = time.time()
     
     # TO DO: Display counts of user types
-    user_type = df['User Type'].value_counts()
-    print(user_type)
+    print(df['User Type'].value_counts())
+    
     # TO DO: Display counts of gender
     if city == 'washington':
         print("Washington city data does not include gender.")
     else:
-        user_gender = df['Gender'].value_counts()
-        print(user_gender)
+        print(df['Gender'].value_counts())
     # TO DO: Display earliest, most recent, and most common year of birth
     if city == 'washington':
         print("Washington city data does not include birth year.")
